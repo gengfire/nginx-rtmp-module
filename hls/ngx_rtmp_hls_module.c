@@ -2419,7 +2419,7 @@ ngx_rtmp_hls_merge_app_conf(ngx_conf_t *cf, void *parent, void *child)
         }
     }
 
-    ngx_conf_merge_str_value(conf->key_path, prev->key_path, "");
+    /* ngx_conf_merge_str_value(conf->key_path, prev->key_path, ""); */
 
     if (conf->key_path.len == 0) {
         conf->key_path = conf->path;
